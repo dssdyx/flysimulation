@@ -1,0 +1,9 @@
+<launch>
+    <arg name="vehicle" default="iris"/>
+    <param name="use_sim_time" value="true" />
+    <!-- Launch PX4 SITL -->
+    <include file="$(find px4)/launch/px4.launch">
+        <arg name="vehicle" value="$(arg vehicle)"/>
+    </include>
+</launch>
+
